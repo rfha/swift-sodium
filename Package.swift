@@ -2,7 +2,7 @@
 import PackageDescription
 
 let clibsodiumTarget: Target
-#if os(OSX) || os(macOS) || os(tvOS) || os(watchOS) || os(iOS)
+#if os(OSX) || os(macOS) || os(tvOS) || os(watchOS) || os(iOS) || os(visionOS)
     clibsodiumTarget = .binaryTarget(
         name: "Clibsodium",
         path: "Clibsodium.xcframework")
